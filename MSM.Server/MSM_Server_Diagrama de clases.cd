@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="La capa Server aloja la lógica de la conectividad de la aplicación que tiene referencias a la capa DAL para realizar ciertas operaciones">
+    <Position X="5.99" Y="1.865" Height="0.781" Width="2.294" />
+  </Comment>
+  <Comment CommentText="Esta clase es un singleton por naturaleza dentro de la aplicación">
+    <Position X="8.896" Y="4.875" Height="0.635" Width="1.783" />
+  </Comment>
+  <Class Name="MSM.Socketing.Server">
+    <Position X="5.75" Y="2.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAIAAAAAABAQAAEABAAACAAAAAAQAACAACCBAA=</HashCode>
+      <FileName>Server.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

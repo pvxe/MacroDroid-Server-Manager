@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="Commands&#xD;&#xA;&#xD;&#xA;MSM.UI.Practices">
+    <Position X="8.427" Y="0.531" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="VM de las vistas parciales&#xD;&#xA;&#xD;&#xA;MSM.UI.ViewModelsPartialContent">
+    <Position X="12.177" Y="0.5" Height="0.573" Width="2.377" />
+  </Comment>
+  <Comment CommentText="MSM.UI&#xD;&#xA;--------&#xD;&#xA;Tiene referencia a Model y DAL">
+    <Position X="0.5" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="MSM.UI.ViewModels">
+    <Position X="5.802" Y="3.865" Height="0.302" Width="1.44" />
+  </Comment>
+  <Comment CommentText="MSM.UI.Views&#xD;&#xA;---------------&#xD;&#xA;Codigo behind ">
+    <Position X="10.635" Y="7.385" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="MSM.UI.ViewModels.EditMacroWindowViewModel">
+    <Position X="1" Y="3" Width="4.75" />
+    <AssociationLine Name="AddKeystrokeUpCommand" Type="MSM.UI.Practices.ObjectParameterRelayCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="4.547" Y="3" />
+        <Point X="4.547" Y="0.953" />
+        <Point X="5.75" Y="0.953" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.807" Y="-1.638" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="DeleteSelectedKeystrokeCommand" Type="MSM.UI.Practices.RelayCommand" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.125" Y="3" />
+        <Point X="5.125" Y="1.773" />
+        <Point X="5.75" Y="1.773" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.152" Y="0.216" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>JAARCBAAAAAgAEEAAAwACgAAAQAAAAAoBAAQACAAEQA=</HashCode>
+      <FileName>ViewModels\EditMacroWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AddKeystrokeDownCommand" />
+      <Property Name="AddKeystrokeUpCommand" />
+      <Property Name="DeleteSelectedKeystrokeCommand" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MSM.UI.ViewModels.MainWindowViewModel">
+    <Position X="7" Y="4.25" Width="4.25" />
+    <AssociationLine Name="ForegroundConnectionContentCommand" Type="MSM.UI.Practices.RelayCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="9.258" Y="4.25" />
+        <Point X="9.258" Y="1.541" />
+        <Point X="7.905" Y="1.541" Type="JumpStart" />
+        <Point X="7.738" Y="1.541" Type="JumpEnd" />
+        <Point X="7.454" Y="1.541" />
+        <Point X="7.454" Y="1.781" />
+        <Point X="7.25" Y="1.781" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.183" Y="-0.596" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ForegroundMacrosContentCommand" Type="MSM.UI.Practices.RelayCommand" ManuallyRouted="true">
+      <Path>
+        <Point X="10.287" Y="4.25" />
+        <Point X="10.287" Y="3.182" />
+        <Point X="9.341" Y="3.182" Type="JumpStart" />
+        <Point X="9.174" Y="3.182" Type="JumpEnd" />
+        <Point X="8.188" Y="3.182" />
+        <Point X="8.188" Y="1.953" />
+        <Point X="7.905" Y="1.953" Type="JumpStart" />
+        <Point X="7.738" Y="1.953" Type="JumpEnd" />
+        <Point X="7.25" Y="1.953" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.609" Y="-1.117" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAACAAAAEABIAAAAQAABAQAAAAAABgAQAAAAAAEA=</HashCode>
+      <FileName>ViewModels\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ForegroundConnectionContentCommand" />
+      <Property Name="ForegroundMacrosContentCommand" />
+      <Property Name="NextTransition" />
+      <Property Name="CurrentContent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MSM.UI.Practices.ObjectParameterRelayCommand" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAACAAQAAEAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Practices\ObjectParameterRelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MSM.UI.Practices.RelayCommand" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAACAAQAAEAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Practices\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="System.Windows.Controls.UserControl" Collapsed="true">
+    <Position X="13" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MSM.UI.ViewModels.PartialContent.ControlConnectionViewModel">
+    <Position X="15.25" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAEAAAAAAAAAIAAAAACAAAAgAAAAgAAAAA=</HashCode>
+      <FileName>ViewModels\PartialContent\ControlConnectionViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSM.UI.ViewModels.PartialContent.ControlMacrosViewModel">
+    <Position X="11.5" Y="1.25" Width="3.5" />
+    <AssociationLine Name="EditMacroCommand" Type="MSM.UI.Practices.ObjectParameterRelayCommand">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-3.598" Y="1.487" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>ViewModels\PartialContent\ControlMacrosViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EditMacroCommand" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MSM.UI.Views.EditMacroWindow">
+    <Position X="12.5" Y="8" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\EditMacroWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MSM.UI.Views.MainWindow">
+    <Position X="10" Y="8.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Enum Name="MahApps.Metro.Controls.TransitionType" Collapsed="true">
+    <Position X="13" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

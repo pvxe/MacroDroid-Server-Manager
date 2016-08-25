@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="MSM.Model&#xD;&#xA;-------------">
+    <Position X="0.5" Y="0.5" Height="0.365" Width="1.7" />
+  </Comment>
+  <Comment CommentText="El método SendInput es invocado en la implementacion de ExecuteKeystroke">
+    <Position X="6.312" Y="1.323" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="MSM.Model.Macro.KeyboardMacro">
+    <Position X="3.75" Y="5" Width="1.5" />
+    <AssociationLine Name="Keystrokes" Type="MSM.Model.Keyboard.Keystroke">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.05" Y="0.329" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAAAAAwAAAAAAAAAAAAAAAAAABIAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Macro\KeyboardMacro.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Keystrokes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MSM.Model.Keyboard.Keystroke" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAACACAAAAAAAAAA=</HashCode>
+      <FileName>Keystroke\Keystroke.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="KeystrokeType" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MSM.Model.InputSimulation.SendInputWrapper">
+    <Position X="6.25" Y="2.25" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="MSM.Model.InputSimulation.SendInputWrapper.VirtualKeyShort" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InputSimulation\SendInputWrapper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="MSM.Model.InputSimulation.SendInputWrapper.InputUnion" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InputSimulation\SendInputWrapper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="MSM.Model.InputSimulation.SendInputWrapper.ScanCodeShort" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InputSimulation\SendInputWrapper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="MSM.Model.InputSimulation.SendInputWrapper.KEYEVENTF" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InputSimulation\SendInputWrapper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="MSM.Model.InputSimulation.SendInputWrapper.MOUSEINPUT" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InputSimulation\SendInputWrapper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="MSM.Model.InputSimulation.SendInputWrapper.MouseEventDataXButtons" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InputSimulation\SendInputWrapper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="MSM.Model.InputSimulation.SendInputWrapper.MOUSEEVENTF" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InputSimulation\SendInputWrapper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="MSM.Model.InputSimulation.SendInputWrapper.KEYBDINPUT" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InputSimulation\SendInputWrapper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="MSM.Model.InputSimulation.SendInputWrapper.HARDWAREINPUT" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InputSimulation\SendInputWrapper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="MSM.Model.InputSimulation.SendInputWrapper.INPUT" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InputSimulation\SendInputWrapper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEAAAIBAAAAAAAAAAAAABAQAAMAAAABAAAAAABAAAAA=</HashCode>
+      <FileName>InputSimulation\SendInputWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MSM.Model.Keyboard.IKeystroke">
+    <Position X="3.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Keystroke\IKeystroke.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="MSM.Model.Keyboard.KeystrokeType">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Keystroke\KeystrokeType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
